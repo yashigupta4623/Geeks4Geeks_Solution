@@ -1,0 +1,13 @@
+def Sandwiched_Vowel(s):
+   #Complete the function
+   v = 'aeiou'
+   ans = ''
+   for i in range(len(s)):
+       if s[i] not in v:
+           ans += s[i]
+       elif i>0 and i<len(s)-1 and s[i-1] not in v and s[i+1] not in v:
+           continue
+       else:
+           ans += s[i]
+   return ans
+    
