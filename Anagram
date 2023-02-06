@@ -1,0 +1,8 @@
+class Solution:
+    
+    #Function is to check whether two strings are anagram of each other or not.
+    def isAnagram(self,a,b):
+        #code here
+        if(len(a)==len(b)):
+            if(sorted(a)==sorted(b)):
+                return 1
