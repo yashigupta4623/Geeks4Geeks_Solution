@@ -1,0 +1,5 @@
+def strstr(s,x):
+    #code here
+    if x in s:
+        return s.index(x)
+    return -1
